@@ -1,0 +1,1023 @@
+<!doctype html>
+<html lang="en" data-theme="matrix">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="color-scheme" content="dark light" />
+
+  <!-- ============== PRIMARY SEO ============== -->
+  <title>Hacker Recon Toolkit — Free Bug Bounty &amp; Red Team Tools (Dorks, JWT, Cookies, SEO)</title>
+  <meta name="description" content="Hacker Recon Toolkit: free, browser-only security research suite. 3,000+ Google &amp; GitHub dorks, JWT inspector, cookie analyzer, sitemap parser, encoder/decoder, SEO audit, hash identifier, IP/CIDR calculator, password meter, HTTP header analyzer. Zero telemetry. Built for bug bounty hunters, red teamers, and students." />
+  <meta name="keywords" content="hacker recon, bug bounty tools, google dorks generator, github dorks, jwt inspector, cookie analyzer, sitemap parser, encoder decoder, seo audit tool, hash identifier, ip cidr calculator, password strength meter, http security headers, red team toolkit, osint tools, security research, ethical hacking, penetration testing tools, browser-only security tools, free hacking tools" />
+  <meta name="author" content="Hacker Recon" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="bingbot" content="index, follow" />
+  <meta name="rating" content="general" />
+  <meta name="distribution" content="global" />
+  <meta name="revisit-after" content="7 days" />
+  <link rel="canonical" href="https://hackerrecon.com/" />
+
+  <!-- ============== OPEN GRAPH ============== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Hacker Recon Toolkit" />
+  <meta property="og:title" content="Hacker Recon Toolkit — Free Bug Bounty &amp; Red Team Tools" />
+  <meta property="og:description" content="3,000+ Google &amp; GitHub dorks, JWT inspector, cookie analyzer, sitemap parser, encoder/decoder, SEO audit, hash identifier, IP/CIDR calculator, password meter, HTTP header analyzer — all browser-only, zero telemetry." />
+  <meta property="og:url" content="https://hackerrecon.com/" />
+  <meta property="og:image" content="https://hackerrecon.com/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Hacker Recon Toolkit dashboard preview" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- ============== TWITTER ============== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hacker Recon Toolkit — Free Bug Bounty &amp; Red Team Tools" />
+  <meta name="twitter:description" content="Power browser-only toolkit: 3,000+ dorks, JWT, cookies, SEO, hashes, CIDR, passwords, HTTP headers. Zero telemetry." />
+  <meta name="twitter:image" content="https://hackerrecon.com/og-cover.png" />
+  <meta name="twitter:image:alt" content="Hacker Recon Toolkit dashboard preview" />
+  <meta name="twitter:site" content="@hackerrecon" />
+  <meta name="twitter:creator" content="@hackerrecon" />
+
+  <!-- ============== ICONS ============== -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2300FF88'/%3E%3Ctext x='32' y='44' font-family='monospace' font-size='40' font-weight='700' text-anchor='middle' fill='%23000'%3ER%3C/text%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2300FF88'/%3E%3Ctext x='32' y='44' font-family='monospace' font-size='40' font-weight='700' text-anchor='middle' fill='%23000'%3ER%3C/text%3E%3C/svg%3E" />
+
+  <!-- ============== PERFORMANCE ============== -->
+  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+  <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
+  <link rel="dns-prefetch" href="https://buy.stripe.com" />
+
+  <!-- ============== STYLES ============== -->
+  <link rel="stylesheet" href="https://fonts.bunny.net/css?family=inter:400,500,600,700|jetbrains-mono:400,500,600&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- ============== SITEMAP ============== -->
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Hacker Recon RSS" href="/rss.xml" />
+
+  <!-- ============== JSON-LD STRUCTURED DATA ============== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Hacker Recon Toolkit",
+    "alternateName": "Hacker Recon",
+    "url": "https://hackerrecon.com/",
+    "description": "Free, browser-only security research suite for bug bounty hunters, red teamers, and students. Includes Google &amp; GitHub dork generators, JWT inspector, cookie analyzer, sitemap parser, encoder/decoder, SEO audit, hash identifier, IP/CIDR calculator, password meter, and HTTP header analyzer.",
+    "applicationCategory": "SecurityApplication",
+    "operatingSystem": "All (Browser-based)",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "152",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "featureList": [
+      "Google Dorks Generator (1,500+ queries)",
+      "GitHub Recon (1,500+ queries)",
+      "JWT Inspector (decode, verify, sign, attack lab)",
+      "Cookie Analyzer with security flag scoring",
+      "Sitemap &amp; robots.txt parser",
+      "Multi-format Encoder / Decoder",
+      "SEO &amp; Keyword Audit",
+      "Hash Identifier",
+      "IP / CIDR Calculator",
+      "Password Strength Meter",
+      "HTTP Security Header Analyzer"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Hacker Recon",
+    "url": "https://hackerrecon.com/",
+    "logo": "https://hackerrecon.com/logo.png",
+    "sameAs": [
+      "https://twitter.com/hackerrecon",
+      "https://github.com/hackerrecon"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hackerrecon@protonmail.com",
+      "contactType": "customer support",
+      "areaServed": "Worldwide",
+      "availableLanguage": ["English"]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Hacker Recon free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Hacker Recon is completely free. All processing happens locally in your browser with zero telemetry. You can optionally support development via the Buy Me a Coffee link."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Hacker Recon send my data anywhere?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Hacker Recon is a fully client-side single-page application. Domains, JWTs, cookies, and HTML you paste never leave your browser."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What can I do with Hacker Recon?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Generate Google and GitHub dorks, decode and verify JWTs, score cookie security flags, parse sitemaps, audit SEO, identify hashes, calculate CIDR ranges, score password strength, and analyze HTTP security headers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is using these tools legal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The tools themselves are legal and freely available. Using them against systems you do not own or are not authorized to test is illegal in most jurisdictions. Always operate within your bug bounty program scope or with explicit written authorization."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6828933380052019" crossorigin="anonymous"></script>
+
+  <!-- Deferred libraries -->
+  <script defer src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/highlight.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/jsrsasign@11.1.0/lib/jsrsasign-all-min.js"></script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9D7BGRCG3Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9D7BGRCG3Z');
+  </script>
+</head>
+<body class="scanlines">
+
+<!-- Matrix rain canvas -->
+<canvas id="matrixRain" aria-hidden="true"></canvas>
+
+<!-- Boot loader -->
+<div id="bootLoader" aria-hidden="true">
+  <div class="box" role="status">
+    <div><span class="l">[boot]</span> hackerrecon.kernel @ <span class="ok">v2.0</span></div>
+    <div><span class="l">[ok]</span> mounting <span class="ok">/dev/dorks</span> · <span class="ok">/dev/jwt</span> · <span class="ok">/dev/cookies</span></div>
+    <div><span class="l">[ok]</span> linking SubtleCrypto, jsrsasign, lucide</div>
+    <div><span class="l">[..]</span> warming up encoder modules…</div>
+    <div><span class="l">[ok]</span> <span class="warn">authorized testing only</span> · zero telemetry confirmed</div>
+    <div class="bar"><i id="bootBar"></i></div>
+    <div style="margin-top:10px"><span class="blink">_</span> press any key to continue (auto in 1.2s)</div>
+  </div>
+</div>
+
+<!-- ============== NAV ============== -->
+<header class="nav" role="banner">
+  <div class="nav-inner">
+    <a href="#top" class="brand" aria-label="Hacker Recon Home">
+      <span class="brand-mark" aria-hidden="true">R</span>
+      <span class="brand-name">HACKER RECON<span> // toolkit</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-link" href="#tools">Tools</a>
+      <a class="nav-link" href="#workflow">Workflow</a>
+      <a class="nav-link" href="#privacy">Privacy</a>
+      <a class="nav-link" href="#disclaimer">Disclaimer</a>
+    </nav>
+    <div class="nav-actions">
+      <span class="pill" title="All processing happens in your browser"><span class="blip"></span>secure // 100% client-side</span>
+
+      <!-- Buy Me a Coffee Stripe button -->
+      <a class="btn btn-coffee"
+         href="https://buy.stripe.com/test_3cI28q3Kf8lz1qMg638Ra01"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Buy me a coffee — support Hacker Recon"
+         id="coffeeBtn">
+        <span class="coffee-emoji" aria-hidden="true">☕</span>
+        <span>Buy me a Coffee</span>
+      </a>
+
+      <button class="cmd-trigger" id="cmdOpen" aria-label="Open command palette">
+        <i data-lucide="search" style="width:14px;height:14px"></i>
+        <span>Quick jump…</span>
+        <span class="kbd">⌘K</span>
+      </button>
+      <a class="icon-btn" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github"></i></a>
+      <div class="theme-wrap">
+        <button class="icon-btn" id="themeToggle" aria-label="Switch theme" aria-haspopup="menu" aria-expanded="false"><i data-lucide="palette"></i></button>
+        <div class="theme-menu" id="themeMenu" role="menu" aria-label="Choose theme">
+          <div class="opt" data-theme-set="matrix" role="menuitemradio"><span class="swatch" style="background:linear-gradient(135deg,#00FF88,#39FF14)"></span>Matrix</div>
+          <div class="opt" data-theme-set="cyberpunk" role="menuitemradio"><span class="swatch" style="background:linear-gradient(135deg,#FF00C8,#00F0FF)"></span>Cyberpunk</div>
+          <div class="opt" data-theme-set="amber" role="menuitemradio"><span class="swatch" style="background:linear-gradient(135deg,#FFB000,#FF7A00)"></span>Amber CRT</div>
+          <div class="opt" data-theme-set="bloodmoon" role="menuitemradio"><span class="swatch" style="background:linear-gradient(135deg,#FF1F3D,#FF6A00)"></span>Bloodmoon</div>
+          <div class="opt" data-theme-set="stealth" role="menuitemradio"><span class="swatch" style="background:linear-gradient(135deg,#1a1a1a,#9CA3AF)"></span>Stealth</div>
+          <div class="opt" data-theme-set="dark" role="menuitemradio"><span class="swatch" style="background:linear-gradient(135deg,#7C5CFF,#00E5FF)"></span>Lab Dark</div>
+          <div class="opt" data-theme-set="light" role="menuitemradio"><span class="swatch" style="background:linear-gradient(135deg,#fff,#e5e7eb);border-color:#ccc"></span>Light</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============== HERO ============== -->
+<section class="section hero" aria-labelledby="hero-h">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow"><span class="dot"></span>v2.0 // Hacker Recon Toolkit · Zero data egress</span>
+      <h1 id="hero-h" style="margin-top:18px" class="neon-text">
+        <span class="glitch" data-text="Recon, decoded.">Recon, decoded.</span><br>
+        <span class="grad">A power toolkit for serious researchers.</span>
+      </h1>
+      <p class="lede mt-16">Hacker Recon is a single-page red-team workspace. Generate Google &amp; GitHub dorks, dissect JSON Web Tokens, analyse cookies, parse sitemaps, audit on-page SEO, identify hashes, calculate CIDR ranges, score passwords, and grade HTTP security headers — all entirely client-side, with zero telemetry.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#tools"><i data-lucide="zap" style="width:16px;height:16px"></i> Open the toolkit</a>
+        <a class="btn" href="#workflow"><i data-lucide="book-open" style="width:16px;height:16px"></i> How it works</a>
+        <a class="btn btn-coffee-hero"
+           href="https://buy.stripe.com/test_3cI28q3Kf8lz1qMg638Ra01"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Support Hacker Recon — Buy me a coffee">
+          <span class="coffee-emoji" aria-hidden="true">☕</span>
+          Buy me a Coffee
+        </a>
+        <button class="btn" id="rotateTheme" type="button"><i data-lucide="palette" style="width:16px;height:16px"></i> Cycle theme</button>
+      </div>
+      <div class="hero-meta">
+        <span><b id="dorkTotal">3,000+</b> built-in dorks</span>
+        <span><b id="toolCount">12</b> integrated tools</span>
+        <span><b>0</b> bytes leave your browser</span>
+        <span><b>6</b> power themes</span>
+      </div>
+    </div>
+    <div class="term" aria-hidden="true">
+      <div class="term-bar">
+        <span class="d"></span><span class="d"></span><span class="d"></span>
+        <span class="ttl">~/hacker-recon — preview.sh</span>
+      </div>
+      <div class="term-body" id="termBody"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== TOOLS ============== -->
+<section class="section" id="tools" aria-labelledby="tools-h">
+  <div class="tools-head">
+    <div>
+      <span class="eyebrow"><span class="dot"></span>The toolkit</span>
+      <h2 id="tools-h" style="margin-top:14px">Twelve tools. One tab. Zero round-trips.</h2>
+      <p class="lede mt-12">Each tool lives inline. Click to expand, work, copy. Nothing you paste ever leaves your browser.</p>
+    </div>
+  </div>
+  <div class="tool-grid" id="toolGrid">
+    <button class="tool-card" data-open="p-google" aria-controls="p-google">
+      <span class="ico"><i data-lucide="search-code"></i></span>
+      <h3>Google Dorks Generator</h3>
+      <p>1,500+ categorised, copy-ready Google search operators tuned to a target domain.</p>
+      <span class="open">Open <i data-lucide="arrow-right" style="width:14px;height:14px"></i></span>
+    </button>
+    <button class="tool-card" data-open="p-github" aria-controls="p-github">
+      <span class="ico"><i data-lucide="github"></i></span>
+      <h3>GitHub Recon</h3>
+      <p>1,500+ GitHub code-search queries to hunt secrets, configs, and exposed internals.</p>
+      <span class="open">Open <i data-lucide="arrow-right" style="width:14px;height:14px"></i></span>
+    </button>
+    <button class="tool-card" data-open="p-sitemap" aria-controls="p-sitemap">
+      <span class="ico"><i data-lucide="git-branch"></i></span>
+      <h3>Sitemap Inspector</h3>
+      <p>Parse <code>sitemap.xml</code> &amp; <code>robots.txt</code> into a navigable URL tree with exports.</p>
+      <span class="open">Open <i data-lucide="arrow-right" style="width:14px;height:14px"></i></span>
+    </button>
+    <button class="tool-card" data-open="p-encoder" aria-controls="p-encoder">
+      <span class="ico"><i data-lucide="binary"></i></span>
+      <h3>Encoder / Decoder</h3>
+      <p>Base{16…85}, URL, HTML, hex, ROT, Morse, hashes, HMAC, JSON↔YAML↔XML, and more.</p>
+      <span class="open">Open <i data-lucide="arrow-right" style="width:14px;height:14px"></i></span>
+    </button>
+    <button class="tool-card" data-open="p-jwt" aria-controls="p-jwt">
+      <span class="ico"><i data-lucide="key-round"></i></span>
+      <h3>JWT Inspector</h3>
+      <p>Decode, verify (HS/RS/ES/PS), forge, and run an attack lab on JSON Web Tokens.</p>
+      <span class="open">Open <i data-lucide="arrow-right" style="width:14px;height:14px"></i></span>
+    </button>
+    <button class="tool-card" data-open="p-cookies" aria-controls="p-cookies">
+      <span class="ico"><i data-lucide="cookie"></i></span>
+      <h3>Cookie Analyzer</h3>
+      <p>Parse <code>Set-Cookie</code> headers, score security flags, flag JWT &amp; entropy issues.</p>
+      <span class="open">Open <i data-lucide="arrow-right" style="width:14px;height:14px"></i></span>
+    </button>
+    <button class="tool-card" data-open="p-seo" aria-controls="p-seo">
+      <span class="ico"><i data-lucide="line-chart"></i></span>
+      <h3>SEO &amp; Keyword Audit</h3>
+      <p>Title, meta, OG, headings, alt-text, schema, density. A ranked fix list out of 100.</p>
+      <span class="open">Open <i data-lucide="arrow-right" style="width:14px;height:14px"></i></span>
+    </button>
+    <button class="tool-card" data-open="p-extras" aria-controls="p-extras">
+      <span class="ico"><i data-lucide="layers"></i></span>
+      <h3>Workflow &amp; Notes</h3>
+      <p>Recent tools, saved JWT secrets (local-only), and a quick recon checklist.</p>
+      <span class="open">Open <i data-lucide="arrow-right" style="width:14px;height:14px"></i></span>
+    </button>
+    <button class="tool-card" data-open="p-hash" aria-controls="p-hash">
+      <span class="ico"><i data-lucide="fingerprint"></i></span>
+      <h3>Hash Identifier</h3>
+      <p>Identify likely hash type (MD5, SHA-1/256/512, NTLM, bcrypt, JWT) and compute hashes locally with SubtleCrypto.</p>
+      <span class="open">Open <i data-lucide="arrow-right" style="width:14px;height:14px"></i></span>
+    </button>
+    <button class="tool-card" data-open="p-ipcidr" aria-controls="p-ipcidr">
+      <span class="ico"><i data-lucide="network"></i></span>
+      <h3>IP / CIDR Calculator</h3>
+      <p>IPv4 + CIDR math: network, broadcast, mask, host range, total hosts, reverse-DNS, in-range checks.</p>
+      <span class="open">Open <i data-lucide="arrow-right" style="width:14px;height:14px"></i></span>
+    </button>
+    <button class="tool-card" data-open="p-passwd" aria-controls="p-passwd">
+      <span class="ico"><i data-lucide="lock-keyhole"></i></span>
+      <h3>Password Strength</h3>
+      <p>Estimate entropy, search-space, and crack-time per attacker class. Detect common patterns and reused tropes.</p>
+      <span class="open">Open <i data-lucide="arrow-right" style="width:14px;height:14px"></i></span>
+    </button>
+    <button class="tool-card" data-open="p-headers" aria-controls="p-headers">
+      <span class="ico"><i data-lucide="shield"></i></span>
+      <h3>HTTP Header Analyzer</h3>
+      <p>Score security headers (CSP, HSTS, XFO, COOP/COEP, Permissions-Policy, Referrer-Policy) with prioritized fixes.</p>
+      <span class="open">Open <i data-lucide="arrow-right" style="width:14px;height:14px"></i></span>
+    </button>
+  </div>
+
+  <!-- ============== GOOGLE DORKS PANEL ============== -->
+  <article class="panel" id="p-google" aria-labelledby="p-google-h">
+    <header class="panel-head">
+      <span class="ico"><i data-lucide="search-code"></i></span>
+      <div>
+        <h3 id="p-google-h">Google Dorks Generator</h3>
+        <div class="sub">1,500+ ready-to-fire operators. Filter by category, search, copy, or open in Google.</div>
+      </div>
+      <button class="btn btn-icon close" data-close aria-label="Close"><i data-lucide="x"></i></button>
+    </header>
+    <div class="panel-body">
+      <div class="row mb-12">
+        <div class="field" style="flex:2">
+          <label for="gDomain">Target domain</label>
+          <input class="input mono" id="gDomain" placeholder="example.com" autocomplete="off" />
+        </div>
+        <div class="field" style="flex:2">
+          <label for="gSearch">Search dorks</label>
+          <input class="input" id="gSearch" placeholder="filter by keyword: ext, admin, env…" />
+        </div>
+        <div class="field" style="flex:1">
+          <label>&nbsp;</label>
+          <button class="btn btn-primary" id="gGenerate"><i data-lucide="play" style="width:14px;height:14px"></i> Generate</button>
+        </div>
+      </div>
+      <div class="dork-shell">
+        <aside class="dork-side" id="gCats" aria-label="Categories"></aside>
+        <div class="dork-list" id="gList"></div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ============== GITHUB DORKS PANEL ============== -->
+  <article class="panel" id="p-github" aria-labelledby="p-github-h">
+    <header class="panel-head">
+      <span class="ico"><i data-lucide="github"></i></span>
+      <div>
+        <h3 id="p-github-h">GitHub Recon</h3>
+        <div class="sub">1,500+ code, issue, and repo queries. Switch search type without rewriting.</div>
+      </div>
+      <button class="btn btn-icon close" data-close aria-label="Close"><i data-lucide="x"></i></button>
+    </header>
+    <div class="panel-body">
+      <div class="row mb-12">
+        <div class="field" style="flex:2">
+          <label for="ghDomain">Target domain or org</label>
+          <input class="input mono" id="ghDomain" placeholder="example.com" autocomplete="off" />
+        </div>
+        <div class="field" style="flex:2">
+          <label for="ghSearch">Search dorks</label>
+          <input class="input" id="ghSearch" placeholder="filter: api_key, env, mongo…" />
+        </div>
+        <div class="field" style="flex:1">
+          <label for="ghType">Type</label>
+          <select class="select" id="ghType">
+            <option value="code">Code</option>
+            <option value="issues">Issues</option>
+            <option value="repositories">Repositories</option>
+            <option value="commits">Commits</option>
+          </select>
+        </div>
+      </div>
+      <div class="dork-shell">
+        <aside class="dork-side" id="ghCats" aria-label="Categories"></aside>
+        <div class="dork-list" id="ghList"></div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ============== SITEMAP PANEL ============== -->
+  <article class="panel" id="p-sitemap" aria-labelledby="p-sitemap-h">
+    <header class="panel-head">
+      <span class="ico"><i data-lucide="git-branch"></i></span>
+      <div>
+        <h3 id="p-sitemap-h">Sitemap Inspector</h3>
+        <div class="sub">Parse XML sitemaps and robots files into a tree, search, export.</div>
+      </div>
+      <button class="btn btn-icon close" data-close aria-label="Close"><i data-lucide="x"></i></button>
+    </header>
+    <div class="tabs" role="tablist">
+      <button class="tab is-active" data-tab="sm-paste">Paste mode</button>
+      <button class="tab" data-tab="sm-fetch">Fetch mode</button>
+    </div>
+    <div class="panel-body">
+      <div class="tab-panel is-active" id="sm-paste">
+        <div class="field">
+          <label for="smInput">Paste sitemap.xml or robots.txt content</label>
+          <textarea class="textarea" id="smInput" placeholder="<urlset xmlns=...>...</urlset>  — or — User-agent: *&#10;Disallow: /admin"></textarea>
+        </div>
+        <div class="row">
+          <button class="btn btn-primary" id="smParse"><i data-lucide="play" style="width:14px;height:14px"></i> Parse</button>
+          <button class="btn" id="smExportJson"><i data-lucide="braces" style="width:14px;height:14px"></i> Export JSON</button>
+          <button class="btn" id="smExportCsv"><i data-lucide="file-spreadsheet" style="width:14px;height:14px"></i> Export CSV</button>
+          <button class="btn" id="smExportTxt"><i data-lucide="file-text" style="width:14px;height:14px"></i> Export TXT</button>
+        </div>
+        <div class="mt-16">
+          <div class="row">
+            <input class="input" id="smFilter" placeholder="Filter URLs…" />
+            <span class="badge" id="smCount">0 URLs</span>
+          </div>
+          <div class="mt-12 card card-pad" id="smTree" style="max-height:480px;overflow:auto"></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="sm-fetch">
+        <div class="callout"><i data-lucide="alert-triangle" class="ico"></i><div>Browsers block cross-origin reads of arbitrary domains. Most fetches will fail with a CORS error — this is a browser security control, not a tool bug. Use paste mode for reliability, or supply your own CORS proxy URL below if you operate one.</div></div>
+        <div class="row mt-12">
+          <div class="field" style="flex:3">
+            <label for="smUrl">Site URL</label>
+            <input class="input mono" id="smUrl" placeholder="https://example.com" />
+          </div>
+          <div class="field" style="flex:2">
+            <label for="smProxy">CORS proxy (optional)</label>
+            <input class="input mono" id="smProxy" placeholder="https://your-proxy.example/?url=" />
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn btn-primary" id="smFetchBtn"><i data-lucide="download" style="width:14px;height:14px"></i> Fetch sitemap.xml &amp; robots.txt</button>
+        </div>
+        <pre class="code mt-12" id="smFetchOut" style="min-height:80px"></pre>
+      </div>
+    </div>
+  </article>
+
+  <!-- ============== ENCODER PANEL ============== -->
+  <article class="panel" id="p-encoder" aria-labelledby="p-encoder-h">
+    <header class="panel-head">
+      <span class="ico"><i data-lucide="binary"></i></span>
+      <div>
+        <h3 id="p-encoder-h">Encoder / Decoder</h3>
+        <div class="sub">Live conversion across 25+ formats. Copy or swap with one click.</div>
+      </div>
+      <button class="btn btn-icon close" data-close aria-label="Close"><i data-lucide="x"></i></button>
+    </header>
+    <div class="tabs" id="encTabs" role="tablist"></div>
+    <div class="panel-body" id="encBody"></div>
+  </article>
+
+  <!-- ============== JWT PANEL ============== -->
+  <article class="panel" id="p-jwt" aria-labelledby="p-jwt-h">
+    <header class="panel-head">
+      <span class="ico"><i data-lucide="key-round"></i></span>
+      <div>
+        <h3 id="p-jwt-h">JWT Inspector</h3>
+        <div class="sub">Decode, verify, forge, and study JSON Web Token attack patterns.</div>
+      </div>
+      <button class="btn btn-icon close" data-close aria-label="Close"><i data-lucide="x"></i></button>
+    </header>
+    <div class="tabs" role="tablist">
+      <button class="tab is-active" data-tab="jwt-decode">Decode</button>
+      <button class="tab" data-tab="jwt-verify">Verify</button>
+      <button class="tab" data-tab="jwt-sign">Encode &amp; Sign</button>
+      <button class="tab" data-tab="jwt-attack">Attack lab</button>
+    </div>
+    <div class="panel-body">
+      <div class="tab-panel is-active" id="jwt-decode">
+        <div class="field">
+          <label for="jwtIn">Token</label>
+          <textarea class="textarea mono" id="jwtIn" placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkphbmUgRG9lIiwiaWF0IjoxNzAwMDAwMDAwfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"></textarea>
+        </div>
+        <div id="jwtTokenView" class="token-display mb-12 hide"></div>
+        <div id="jwtMeta" class="row mb-12 hide" style="gap:8px"></div>
+        <div class="jwt-parts">
+          <div class="jwt-part"><h4 class="hdr">Header</h4><div class="codewrap"><pre class="code" id="jwtHeader"></pre></div></div>
+          <div class="jwt-part"><h4 class="pl">Payload</h4><div class="codewrap"><pre class="code" id="jwtPayload"></pre></div></div>
+          <div class="jwt-part"><h4 class="sg">Signature</h4><div class="codewrap"><pre class="code" id="jwtSig"></pre></div></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="jwt-verify">
+        <div class="field">
+          <label for="jwtVerifyIn">Token</label>
+          <textarea class="textarea mono" id="jwtVerifyIn" placeholder="paste token…"></textarea>
+        </div>
+        <div class="field">
+          <label for="jwtKey">Secret (HS*) or PEM public key (RS/ES/PS*)</label>
+          <textarea class="textarea mono" id="jwtKey" placeholder="my-secret  — or —  -----BEGIN PUBLIC KEY-----..."></textarea>
+        </div>
+        <div class="row">
+          <button class="btn btn-primary" id="jwtVerifyBtn"><i data-lucide="shield-check" style="width:14px;height:14px"></i> Verify signature</button>
+          <button class="btn" id="jwtSaveSecret"><i data-lucide="save" style="width:14px;height:14px"></i> Save secret locally</button>
+        </div>
+        <div id="jwtVerifyOut" class="mt-12"></div>
+        <p class="muted sm mt-8"><i data-lucide="info" style="width:12px;height:12px;vertical-align:-2px"></i> Saved secrets live in your browser's localStorage. Nothing is sent to any server.</p>
+      </div>
+      <div class="tab-panel" id="jwt-sign">
+        <div class="row">
+          <div class="field" style="flex:1">
+            <label for="jwtSignAlg">Algorithm</label>
+            <select class="select" id="jwtSignAlg">
+              <option>HS256</option><option>HS384</option><option>HS512</option>
+              <option>RS256</option><option>RS384</option><option>RS512</option>
+              <option>ES256</option><option>ES384</option>
+              <option>PS256</option>
+              <option>none</option>
+            </select>
+          </div>
+          <div class="field" style="flex:2">
+            <label for="jwtSignKey">Secret or PEM private key</label>
+            <input class="input mono" id="jwtSignKey" placeholder="my-secret or -----BEGIN PRIVATE KEY-----…" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="field" style="flex:1">
+            <label for="jwtSignHeader">Header (JSON)</label>
+            <textarea class="textarea mono" id="jwtSignHeader">{
+  "alg": "HS256",
+  "typ": "JWT"
+}</textarea>
+          </div>
+          <div class="field" style="flex:1">
+            <label for="jwtSignPayload">Payload (JSON)</label>
+            <textarea class="textarea mono" id="jwtSignPayload">{
+  "sub": "1234567890",
+  "name": "Jane Doe",
+  "iat": 1700000000
+}</textarea>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn btn-primary" id="jwtSignBtn"><i data-lucide="pen-line" style="width:14px;height:14px"></i> Sign</button>
+        </div>
+        <div class="codewrap mt-12">
+          <button class="btn btn-sm copy" data-copy="jwtSignOut"><i data-lucide="copy" style="width:12px;height:12px"></i> Copy</button>
+          <pre class="code" id="jwtSignOut"></pre>
+        </div>
+      </div>
+      <div class="tab-panel" id="jwt-attack">
+        <div class="callout"><i data-lucide="shield-alert" class="ico"></i><div><b>Educational use only.</b> The lab demonstrates published JWT vulnerabilities (RFC 8725 §2). Do not run these against systems you do not own or are not authorized to test.</div></div>
+        <div class="field mt-12">
+          <label for="jwtAttackIn">Source token</label>
+          <textarea class="textarea mono" id="jwtAttackIn" placeholder="paste a token to mutate…"></textarea>
+        </div>
+        <div class="row">
+          <button class="btn" data-attack="none">alg=none</button>
+          <button class="btn" data-attack="confusion">RS→HS confusion</button>
+          <button class="btn" data-attack="kid">kid injection examples</button>
+          <button class="btn" data-attack="jku">jku/x5u SSRF notes</button>
+          <button class="btn btn-primary" data-attack="brute">Brute-force HS256 (top-1k)</button>
+        </div>
+        <div id="jwtAttackOut" class="mt-12"></div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ============== COOKIE PANEL ============== -->
+  <article class="panel" id="p-cookies" aria-labelledby="p-cookies-h">
+    <header class="panel-head">
+      <span class="ico"><i data-lucide="cookie"></i></span>
+      <div>
+        <h3 id="p-cookies-h">Cookie Analyzer</h3>
+        <div class="sub">Parse Set-Cookie headers, score flags, detect JWTs &amp; PII.</div>
+      </div>
+      <button class="btn btn-icon close" data-close aria-label="Close"><i data-lucide="x"></i></button>
+    </header>
+    <div class="panel-body">
+      <div class="field">
+        <label for="ckIn">Paste headers (Set-Cookie / Cookie / document.cookie)</label>
+        <textarea class="textarea mono" id="ckIn" placeholder="Set-Cookie: sid=abc.def.ghi; Path=/; HttpOnly; Secure; SameSite=Lax&#10;Set-Cookie: theme=dark; Max-Age=2592000"></textarea>
+      </div>
+      <div class="row">
+        <button class="btn btn-primary" id="ckParse"><i data-lucide="play" style="width:14px;height:14px"></i> Analyze</button>
+        <button class="btn" id="ckExportJson"><i data-lucide="braces" style="width:14px;height:14px"></i> Export JSON</button>
+        <button class="btn" id="ckExportMd"><i data-lucide="file-text" style="width:14px;height:14px"></i> Export Markdown</button>
+      </div>
+      <div class="mt-16" id="ckOut"></div>
+    </div>
+  </article>
+
+  <!-- ============== SEO PANEL ============== -->
+  <article class="panel" id="p-seo" aria-labelledby="p-seo-h">
+    <header class="panel-head">
+      <span class="ico"><i data-lucide="line-chart"></i></span>
+      <div>
+        <h3 id="p-seo-h">SEO &amp; Keyword Audit</h3>
+        <div class="sub">Holistic on-page audit. Score, prioritized fixes, density, schema.</div>
+      </div>
+      <button class="btn btn-icon close" data-close aria-label="Close"><i data-lucide="x"></i></button>
+    </header>
+    <div class="tabs" role="tablist">
+      <button class="tab is-active" data-tab="seo-paste">Paste HTML</button>
+      <button class="tab" data-tab="seo-fetch">Fetch URL</button>
+    </div>
+    <div class="panel-body">
+      <div class="tab-panel is-active" id="seo-paste">
+        <div class="row mb-12">
+          <div class="field" style="flex:1">
+            <label for="seoTarget">Target keyword (optional)</label>
+            <input class="input" id="seoTarget" placeholder="e.g. authentication" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="seoIn">Page HTML</label>
+          <textarea class="textarea mono" id="seoIn" placeholder="<!doctype html><html>…"></textarea>
+        </div>
+        <div class="row">
+          <button class="btn btn-primary" id="seoRun"><i data-lucide="play" style="width:14px;height:14px"></i> Audit</button>
+        </div>
+        <div class="mt-16" id="seoOut"></div>
+      </div>
+      <div class="tab-panel" id="seo-fetch">
+        <div class="callout"><i data-lucide="alert-triangle" class="ico"></i><div>Cross-origin URL fetches are CORS-blocked in browsers. Provide a proxy you operate, or save the page and use paste mode.</div></div>
+        <div class="row mt-12">
+          <div class="field" style="flex:3">
+            <label for="seoUrl">URL</label>
+            <input class="input mono" id="seoUrl" placeholder="https://example.com/page" />
+          </div>
+          <div class="field" style="flex:2">
+            <label for="seoProxy">CORS proxy</label>
+            <input class="input mono" id="seoProxy" placeholder="https://your-proxy.example/?url=" />
+          </div>
+        </div>
+        <button class="btn btn-primary" id="seoFetchBtn"><i data-lucide="download" style="width:14px;height:14px"></i> Fetch &amp; audit</button>
+      </div>
+    </div>
+  </article>
+
+  <!-- ============== EXTRAS PANEL ============== -->
+  <article class="panel" id="p-extras" aria-labelledby="p-extras-h">
+    <header class="panel-head">
+      <span class="ico"><i data-lucide="layers"></i></span>
+      <div>
+        <h3 id="p-extras-h">Workflow &amp; Notes</h3>
+        <div class="sub">Recent tools, locally saved JWT secrets, recon checklist.</div>
+      </div>
+      <button class="btn btn-icon close" data-close aria-label="Close"><i data-lucide="x"></i></button>
+    </header>
+    <div class="panel-body">
+      <h4 style="font-size:13px;color:var(--text-mute);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px">Recently used</h4>
+      <div id="recentList" class="row mb-16"></div>
+      <h4 style="font-size:13px;color:var(--text-mute);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px">Saved JWT secrets (local-only)</h4>
+      <div id="secretList" class="mb-16"></div>
+      <h4 style="font-size:13px;color:var(--text-mute);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px">Recon checklist</h4>
+      <ul class="muted sm" style="line-height:1.9">
+        <li>Confirm scope &amp; written authorization before any active testing.</li>
+        <li>Run Google + GitHub dorks against the apex and discovered subdomains.</li>
+        <li>Pull <code>robots.txt</code>, <code>sitemap.xml</code>, <code>.well-known/security.txt</code>.</li>
+        <li>Inspect every JWT and Set-Cookie header in scope; record flag posture.</li>
+        <li>Audit the marketing site for accidental subdomain leaks &amp; structured-data slips.</li>
+        <li>Document every finding with reproduction steps and a clear impact statement.</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- ============== HASH IDENTIFIER PANEL ============== -->
+  <article class="panel" id="p-hash" aria-labelledby="p-hash-h">
+    <header class="panel-head">
+      <span class="ico"><i data-lucide="fingerprint"></i></span>
+      <div>
+        <h3 id="p-hash-h">Hash Identifier &amp; Hasher</h3>
+        <div class="sub">Identify common hash formats and compute MD5/SHA family digests locally.</div>
+      </div>
+      <button class="btn btn-icon close" data-close aria-label="Close"><i data-lucide="x"></i></button>
+    </header>
+    <div class="tabs" role="tablist">
+      <button class="tab is-active" data-tab="hash-id">Identify</button>
+      <button class="tab" data-tab="hash-make">Hash text</button>
+    </div>
+    <div class="panel-body">
+      <div class="tab-panel is-active" id="hash-id">
+        <div class="field">
+          <label for="hashIn">Hash to identify</label>
+          <input class="input mono" id="hashIn" placeholder="5f4dcc3b5aa765d61d8327deb882cf99" autocomplete="off" />
+          <div class="field-msg" id="hashInMsg"></div>
+        </div>
+        <div class="row">
+          <button class="btn btn-primary" id="hashIdentify"><i data-lucide="play" style="width:14px;height:14px"></i> Identify</button>
+          <button class="btn" id="hashClear"><i data-lucide="eraser" style="width:14px;height:14px"></i> Clear</button>
+        </div>
+        <div class="t-log mt-12" id="hashIdOut">// awaiting input…</div>
+      </div>
+      <div class="tab-panel" id="hash-make">
+        <div class="field">
+          <label for="hashMakeIn">Plaintext</label>
+          <textarea class="textarea mono" id="hashMakeIn" placeholder="hello"></textarea>
+        </div>
+        <div class="row">
+          <button class="btn btn-primary" id="hashCompute"><i data-lucide="play" style="width:14px;height:14px"></i> Compute digests</button>
+        </div>
+        <div class="t-log mt-12" id="hashMakeOut">// digests will appear here…</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ============== IP / CIDR PANEL ============== -->
+  <article class="panel" id="p-ipcidr" aria-labelledby="p-ipcidr-h">
+    <header class="panel-head">
+      <span class="ico"><i data-lucide="network"></i></span>
+      <div>
+        <h3 id="p-ipcidr-h">IP / CIDR Calculator</h3>
+        <div class="sub">Network, broadcast, mask, host range, and reverse-DNS for any IPv4 + CIDR.</div>
+      </div>
+      <button class="btn btn-icon close" data-close aria-label="Close"><i data-lucide="x"></i></button>
+    </header>
+    <div class="panel-body">
+      <div class="row mb-12">
+        <div class="field" style="flex:2">
+          <label for="ipIn">IPv4 address or CIDR (e.g. 10.0.0.0/24)</label>
+          <input class="input mono" id="ipIn" placeholder="192.168.1.10/24" autocomplete="off" />
+          <div class="field-msg" id="ipInMsg"></div>
+        </div>
+        <div class="field" style="flex:2">
+          <label for="ipCheck">Check if IP is in range (optional)</label>
+          <input class="input mono" id="ipCheck" placeholder="192.168.1.55" autocomplete="off" />
+          <div class="field-msg" id="ipCheckMsg"></div>
+        </div>
+        <div class="field" style="flex:1">
+          <label>&nbsp;</label>
+          <button class="btn btn-primary" id="ipRun"><i data-lucide="play" style="width:14px;height:14px"></i> Calculate</button>
+        </div>
+      </div>
+      <div class="t-log" id="ipOut">// IPv4 only. RFC 4632 CIDR semantics.</div>
+    </div>
+  </article>
+
+  <!-- ============== PASSWORD STRENGTH PANEL ============== -->
+  <article class="panel" id="p-passwd" aria-labelledby="p-passwd-h">
+    <header class="panel-head">
+      <span class="ico"><i data-lucide="lock-keyhole"></i></span>
+      <div>
+        <h3 id="p-passwd-h">Password Strength Meter</h3>
+        <div class="sub">Entropy estimate (bits), search space, crack time, common-pattern penalties.</div>
+      </div>
+      <button class="btn btn-icon close" data-close aria-label="Close"><i data-lucide="x"></i></button>
+    </header>
+    <div class="panel-body">
+      <div class="field">
+        <label for="pwIn">Password</label>
+        <input class="input mono" id="pwIn" type="text" placeholder="enter a password to score" autocomplete="off" />
+        <div class="field-msg" id="pwInMsg"></div>
+      </div>
+      <div class="meter mb-12"><i id="pwBar" style="width:0;background:var(--crit)"></i></div>
+      <div class="row mb-12">
+        <button class="btn btn-sm" id="pwShow" type="button"><i data-lucide="eye" style="width:12px;height:12px"></i> Show</button>
+        <button class="btn btn-sm" id="pwGen" type="button"><i data-lucide="dice-5" style="width:12px;height:12px"></i> Suggest secure</button>
+        <button class="btn btn-sm" id="pwClear" type="button"><i data-lucide="eraser" style="width:12px;height:12px"></i> Clear</button>
+      </div>
+      <div class="t-log" id="pwOut">// strength report appears here…</div>
+      <p class="muted sm mt-8"><i data-lucide="info" style="width:12px;height:12px;vertical-align:-2px"></i> Crack-time estimates are heuristic. They assume offline, salted hashing at attacker GPU rates of 10⁹–10¹² guesses/sec depending on class.</p>
+    </div>
+  </article>
+
+  <!-- ============== HEADER ANALYZER PANEL ============== -->
+  <article class="panel" id="p-headers" aria-labelledby="p-headers-h">
+    <header class="panel-head">
+      <span class="ico"><i data-lucide="shield"></i></span>
+      <div>
+        <h3 id="p-headers-h">HTTP Security Header Analyzer</h3>
+        <div class="sub">Paste raw response headers. Get a 0–100 score and a prioritized fix list.</div>
+      </div>
+      <button class="btn btn-icon close" data-close aria-label="Close"><i data-lucide="x"></i></button>
+    </header>
+    <div class="panel-body">
+      <div class="field">
+        <label for="hdrIn">Raw HTTP response headers</label>
+        <textarea class="textarea mono" id="hdrIn" placeholder="HTTP/2 200&#10;content-type: text/html; charset=utf-8&#10;strict-transport-security: max-age=31536000; includeSubDomains; preload&#10;content-security-policy: default-src 'self'&#10;x-frame-options: DENY"></textarea>
+        <div class="field-msg" id="hdrInMsg"></div>
+      </div>
+      <div class="row">
+        <button class="btn btn-primary" id="hdrRun"><i data-lucide="play" style="width:14px;height:14px"></i> Analyze</button>
+        <button class="btn" id="hdrSample"><i data-lucide="file-text" style="width:14px;height:14px"></i> Load sample</button>
+      </div>
+      <div class="mt-16" id="hdrOut"></div>
+    </div>
+  </article>
+</section>
+
+<!-- ============== WORKFLOW ============== -->
+<section class="section section-tight" id="workflow" aria-labelledby="workflow-h">
+  <span class="eyebrow"><span class="dot"></span>How it fits together</span>
+  <h2 id="workflow-h" style="margin-top:14px">A predictable recon loop.</h2>
+  <p class="lede mt-12">Start broad with dorks. Narrow with sitemap and SEO surface analysis. Triage findings through JWT and cookie analyzers. Decode anything strange.</p>
+  <div class="tool-grid mt-24">
+    <div class="card card-pad">
+      <span class="badge info"><i data-lucide="compass" style="width:12px;height:12px"></i> 01 · Discover</span>
+      <h3 class="mt-8">Surface mapping</h3>
+      <p class="muted sm mt-8">Run Google + GitHub dorks. Parse the sitemap. Note every subdomain, parameter, and exposed file.</p>
+    </div>
+    <div class="card card-pad">
+      <span class="badge info"><i data-lucide="microscope" style="width:12px;height:12px"></i> 02 · Inspect</span>
+      <h3 class="mt-8">Auth surface</h3>
+      <p class="muted sm mt-8">Decode every JWT in flight. Score every Set-Cookie. Look for misconfigured SameSite, missing Secure, weak secrets.</p>
+    </div>
+    <div class="card card-pad">
+      <span class="badge info"><i data-lucide="flask-conical" style="width:12px;height:12px"></i> 03 · Decode</span>
+      <h3 class="mt-8">Format archaeology</h3>
+      <p class="muted sm mt-8">Strange tokens? Encoded blobs? The encoder/decoder covers Base{16…85}, hex, ROT, hashes, HMAC, JSON↔YAML↔XML.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============== SUPPORT / COFFEE ============== -->
+<section class="section section-tight" id="support" aria-labelledby="support-h">
+  <div class="card card-pad coffee-card">
+    <div class="coffee-card-inner">
+      <div>
+        <span class="eyebrow"><span class="dot"></span>Support development</span>
+        <h2 id="support-h" style="margin-top:14px">Buy me a coffee ☕</h2>
+        <p class="lede mt-12">Hacker Recon is free, ad-free in spirit, and 100% browser-only. If it saved you time on a recon engagement, consider fueling the next feature.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-coffee-cta"
+             href="https://buy.stripe.com/test_3cI28q3Kf8lz1qMg638Ra01"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Buy me a coffee — secure payment via Stripe">
+            <span class="coffee-emoji" aria-hidden="true">☕</span>
+            Buy me a Coffee · Secure Stripe Checkout
+          </a>
+        </div>
+        <p class="muted sm mt-12"><i data-lucide="lock" style="width:12px;height:12px;vertical-align:-2px"></i> Payments are processed securely by Stripe. Hacker Recon never sees your card details.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PRIVACY ============== -->
+<section class="section" id="privacy" aria-labelledby="privacy-h">
+  <span class="eyebrow"><span class="dot"></span>Privacy &amp; legal</span>
+  <h2 id="privacy-h" style="margin-top:14px">Privacy Policy</h2>
+  <p class="lede mt-12">Last updated: <span id="lastUpdated"></span></p>
+  <div class="card card-pad mt-16" style="line-height:1.75;color:var(--text-dim)">
+    <h3 style="color:var(--text)">1. No data collection</h3>
+    <p>Hacker Recon is delivered as a static HTML page. All processing — dork generation, JWT decoding, cookie analysis, sitemap parsing, SEO scoring, encoding/decoding — happens entirely inside your browser. No domain, token, cookie, or HTML you paste is transmitted to any Hacker Recon server. There is no Hacker Recon server.</p>
+    <h3 style="color:var(--text)">2. Local storage</h3>
+    <p>The site uses your browser's <code>localStorage</code> only for non-sensitive preferences (theme, recently opened tools) and any JWT secrets you explicitly choose to save. Saved secrets are stored on your device and are not synchronised, backed up, or transmitted. Clear them at any time from the <em>Workflow &amp; Notes</em> panel or by clearing your browser storage.</p>
+    <h3 style="color:var(--text)">3. Third-party assets</h3>
+    <p>The page loads typography from Bunny Fonts, icons from jsDelivr, syntax highlighting from jsDelivr, and a JWT crypto library (<code>jsrsasign</code>) from jsDelivr. These providers may log standard HTTP request metadata (IP address, user agent) for the purpose of serving those assets, as is the case with any web request. Hacker Recon does not control or receive that data.</p>
+    <h3 style="color:var(--text)">4. Payment processing (Stripe)</h3>
+    <p>If you click "Buy me a Coffee," you are redirected to Stripe Checkout. Stripe receives your name, email, billing address, and payment information for the purpose of processing the transaction. Hacker Recon never sees, stores, or touches your card details. Refer to <a style="color:var(--accent-2)" href="https://stripe.com/privacy" target="_blank" rel="noopener">Stripe's Privacy Policy</a> for their data handling practices.</p>
+    <h3 style="color:var(--text)">5. Outbound search links</h3>
+    <p>Buttons such as "Open in Google" or "Open on GitHub" construct a search URL and open it in a new tab. Once you click such a link you are interacting directly with that third party and their privacy policy applies.</p>
+    <h3 style="color:var(--text)">6. Analytics</h3>
+    <p>This site uses Google Analytics (G-9D7BGRCG3Z) to measure aggregate traffic and improve the toolkit. Analytics data is anonymized; no personally identifiable information is collected.</p>
+    <h3 style="color:var(--text)">7. Cookies</h3>
+    <p>This site sets analytics cookies via Google Analytics. No application-level tracking cookies are set by Hacker Recon itself.</p>
+    <h3 style="color:var(--text)">8. Children</h3>
+    <p>This site is not directed at minors and is intended for security professionals and adult learners.</p>
+    <h3 style="color:var(--text)">9. Changes</h3>
+    <p>This policy may be updated. The "Last updated" date above reflects the current version. Continued use after a change constitutes acceptance.</p>
+    <h3 style="color:var(--text)">10. Contact</h3>
+    <p>Privacy questions or abuse / DMCA reports: <a style="color:var(--accent-2)" href="mailto:hackerrecon@protonmail.com">hackerrecon@protonmail.com</a>.</p>
+  </div>
+</section>
+
+<!-- ============== DISCLAIMER ============== -->
+<section class="section section-tight" id="disclaimer" aria-labelledby="disclaimer-h">
+  <span class="eyebrow"><span class="dot"></span>Legal</span>
+  <h2 id="disclaimer-h" style="margin-top:14px">Legal Disclaimer &amp; Acceptable Use</h2>
+  <div class="card card-pad mt-16" style="line-height:1.75;color:var(--text-dim)">
+    <h3 style="color:var(--text)">Educational purpose only</h3>
+    <p>Hacker Recon is provided exclusively for authorized security research, bug bounty engagements within published program rules, capture-the-flag and lab exercises, and academic study. It is a reference and convenience tool — every operator and query it produces is publicly documented in vendor docs, search engine help, and the security research community.</p>
+    <h3 style="color:var(--text)">User responsibility</h3>
+    <p>You are solely responsible for ensuring you have explicit, written authorization to test any target system. Unauthorized access to or interference with computer systems is illegal in virtually every jurisdiction, including under the Computer Fraud and Abuse Act (United States, 18 U.S.C. § 1030), the Computer Misuse Act 1990 (United Kingdom), the Information Technology Act 2000 (India), Directive 2013/40/EU and corresponding national laws (European Union), and equivalent statutes elsewhere. Civil liability may also attach.</p>
+    <h3 style="color:var(--text)">No warranty</h3>
+    <p>The Service is provided "AS IS" and "AS AVAILABLE," without warranty of any kind, express or implied, including warranties of merchantability, fitness for a particular purpose, accuracy, completeness, non-infringement, or uninterrupted operation. Search operators evolve and may produce different or no results over time.</p>
+    <h3 style="color:var(--text)">Limitation of liability</h3>
+    <p>To the maximum extent permitted by law, the operators of Hacker Recon disclaim any and all liability for direct, indirect, incidental, consequential, special, exemplary, or punitive damages — including loss of profits, data, goodwill, or other intangible losses — arising out of or relating to your use of the Service, even if advised of the possibility of such damages.</p>
+    <h3 style="color:var(--text)">Acceptable use</h3>
+    <p>You agree not to use the Service to: (a) test or interact with systems you do not own or do not have explicit, written permission to assess; (b) evade or attempt to evade legal responsibility; (c) harass, threaten, or harm others; (d) circumvent the security or access controls of any system; (e) violate any applicable law, regulation, contract, court order, or program scope. Bug bounty researchers must operate strictly within the rules of the program in question.</p>
+    <h3 style="color:var(--text)">No data collection</h3>
+    <p>All processing occurs locally in your browser. No inputs (domains, JWTs, cookies, HTML, secrets) are transmitted to any Hacker Recon server.</p>
+    <h3 style="color:var(--text)">Reporting abuse</h3>
+    <p>To report abuse or submit a DMCA notice: <a style="color:var(--accent-2)" href="mailto:hackerrecon@protonmail.com">hackerrecon@protonmail.com</a>.</p>
+    <h3 style="color:var(--text)">Governing law</h3>
+    <p>These terms are governed by the laws of India, without regard to its conflict-of-laws principles. Exclusive jurisdiction and venue lie in the courts located in India.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============== FOOTER ============== -->
+<footer>
+  <div class="inner">
+    <div>
+      <div class="brand"><span class="brand-mark" aria-hidden="true">R</span><span class="brand-name">Hacker Recon</span></div>
+      <p class="muted sm mt-12" style="max-width:36ch">Made for security researchers. Browser-only. Zero telemetry. Authorized testing only.</p>
+      <a class="btn btn-coffee btn-sm mt-12"
+         href="https://buy.stripe.com/test_3cI28q3Kf8lz1qMg638Ra01"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Buy me a coffee">
+        <span class="coffee-emoji" aria-hidden="true">☕</span> Buy me a Coffee
+      </a>
+    </div>
+    <div>
+      <h5>Tools</h5>
+      <ul>
+        <li><a href="#p-google">Google Dorks</a></li>
+        <li><a href="#p-github">GitHub Recon</a></li>
+        <li><a href="#p-jwt">JWT Inspector</a></li>
+        <li><a href="#p-cookies">Cookie Analyzer</a></li>
+        <li><a href="#p-seo">SEO Audit</a></li>
+        <li><a href="#p-headers">HTTP Headers</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Reference</h5>
+      <ul>
+        <li><a href="#workflow">Workflow</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#disclaimer">Disclaimer</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="mailto:hackerrecon@protonmail.com">hackerrecon@protonmail.com</a></li>
+        <li><span class="muted">Karnataka, India</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="inner legal">
+    <span>© <span id="yr"></span> Hacker Recon. All rights reserved.</span>
+    <span>Authorized testing only. No warranty. No data egress.</span>
+  </div>
+</footer>
+
+<!-- Toasts -->
+<div id="toasts" aria-live="polite" aria-atomic="true"></div>
+
+<!-- Terms modal -->
+<div class="modal-back" id="termsModal" role="dialog" aria-modal="true" aria-labelledby="termsTitle">
+  <div class="modal">
+    <span class="eyebrow"><span class="dot"></span>One-time agreement</span>
+    <h2 id="termsTitle" style="margin-top:12px">Before you continue</h2>
+    <p>Hacker Recon is a research tool. By proceeding you confirm:</p>
+    <ul>
+      <li>You will only use it against systems you own or are <b>explicitly authorized</b> to test.</li>
+      <li>You understand unauthorized access to computer systems is illegal in virtually every jurisdiction.</li>
+      <li>You accept the <a style="color:var(--accent-2)" href="#disclaimer">Legal Disclaimer</a> and <a style="color:var(--accent-2)" href="#privacy">Privacy Policy</a>.</li>
+      <li>The tool is provided AS IS, without warranty, and the operators bear no liability.</li>
+    </ul>
+    <div class="modal-actions">
+      <button class="btn" id="termsDecline">Leave</button>
+      <button class="btn btn-primary" id="termsAccept">I understand and accept</button>
+    </div>
+  </div>
+</div>
+
+<!-- Command palette -->
+<div class="cmd-back" id="cmdBack" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="cmd-box">
+    <input class="cmd-input" id="cmdInput" placeholder="Jump to a tool, action, or section…" />
+    <div class="cmd-results" id="cmdResults"></div>
+  </div>
+</div>
+
+<!-- Application script -->
+<script src="script.js" defer></script>
+</body>
+</html>
